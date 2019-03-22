@@ -1,0 +1,278 @@
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: Helvetica;
+}
+
+.container{
+  width: 960px;
+  margin: auto;
+}
+
+header{
+  height: 2.32rem;
+  background-color: black;
+  color: white;
+}
+
+header .logo{
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+header span{
+  display: inline-block;
+  margin: 0.66rem 0;
+}
+
+.banner{
+  height: 25rem;
+  background-image: url("../img/moto.jpeg");
+  background-size: cover;
+}
+
+.banner .container{
+  height: 25rem;
+}
+
+.box{
+  background-color: black;
+  color: white;
+  width: 20rem;
+  position: absolute;
+  margin-top: 9rem;
+}
+
+.wrapper{
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box h4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.box h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+nav{
+  background-color: firebrick;
+  height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+nav .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.products{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+figure{
+  display: block;
+  width: 30%;
+  border-width: 4px 4px 0 4px;
+  border-style: solid;
+  border-color: black;
+  height: calc(4px + 2rem + 9rem + 2rem + 2rem);
+  position: relative;
+}
+
+figure img{
+  max-height: 9rem;
+  max-width: 50%;
+  position: relative;
+  top: 2rem;
+  left: 25%;
+}
+
+figure figcaption{
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lochours{
+  display: flex;
+  justify-content: space-between;
+}
+
+.location,
+.hours{
+  display: inline-block;
+  width: 35%;
+}
+
+.label{
+  display: block;
+  line-height: 3rem;
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+}
+
+.info{
+  display: block;
+  padding-top: 4px;
+  padding-left: 2rem;
+}
+
+footer{
+  background-color: black;
+  height: 5rem;
+  color: white;
+  margin-top: 4rem;
+}
+
+footer p{
+  line-height: 5rem;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container{
+    width: 100%;
+  }
+
+  .box h1{
+    font-size: 1.5rem;
+  }
+
+  .container a{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile a{
+    color: white;
+    text-decoration: none;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+
+  .products .glasses{
+      display: none;
+    }
+
+  figure{
+    width: 47%;
+  }
+
+}
+
+@media only screen and (max-width: 470px){
+  footer p{
+    text-align: center;
+  }
+
+  .container a{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile a{
+    color: white;
+    text-decoration: none;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+
+  .products .glasses{
+      display: none;
+    }
+
+  .products .watch{
+    display: none;
+  }
+
+  figure{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .lochours{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location,
+  .hours{
+    width: 90%;
+  }
+
+  .hours{
+    margin-top: 0.5rem;
+  }
+
+  .wrapper{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .box h4{
+    font-size: 0.77rem;
+  }
+
+  .box h1{
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .banner{
+    height: 15rem;
+  }
+
+  .banner .container{
+    height: 15rem;
+  }
+
+  .box{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    margin-top: 10rem;
+  }
+}
